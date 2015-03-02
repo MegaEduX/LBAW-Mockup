@@ -76,14 +76,26 @@
       </div>
       
       <div class="row">
-        <div class="col-md-6">
-          <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">Featured</a></li>
-            <li role="presentation"><a href="#">Upcoming</a></li>
+        <div class="col-md-6" role="tabpanel">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">Featured</a></li>
+            <li role="presentation"><a href="#upcoming" aria-controls="upcoming" role="tab" data-toggle="tab">Upcoming</a></li>
           </ul>
-          <ul>
-            <li>foo</li>
-          </ul>
+          
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="featured">
+              <br />
+              <ul>
+                <li><a href="#">Reunião para descobrir qual a cor do cavalo branco de Napoleão</a><br /><small>Happening in 2 days, 3 hours at Palácio da Bolsa</small></li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="upcoming">
+              <br />
+              <p>Upcoming here...</p>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
           <center>
@@ -100,15 +112,13 @@
       </div>
     </footer>
     
-    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="js/d3.layout.cloud.js"></script>-->
-    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
