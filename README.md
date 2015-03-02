@@ -14,10 +14,10 @@ git commit -m "Commit Message"
 
 **Send changes to server:**
 
-git push origin master
+git push origin branch-name [master]
 
 ---
 
 **Get changes from server:**
 
-git pull origin master
+git pull origin branch-name [master]
